@@ -1,0 +1,12 @@
+:root{
+    --water-background{
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        color: #fff;
+      }
+}
+.square{
+    width: 80px;
+    height: 80px;
+    background:var(--water-background);
+}

@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+body{
+  background: linear-gradient(90deg,#7f00ff,#e100ff,#ff0080ff); 
+  font-family: "Happy Monkey", system-ui;
+}
