@@ -1,14 +1,38 @@
-.main-div{
+.main-div {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
-.water-background{
+  height: 100vh; }
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.water-background {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
 }
-.game-heading{
- padding: 5px 20px;
- border-radius: 5px;
+
+.square-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+.move-detection
+{
+  display: flex;
+  justify-content: space-between;
+}
+.left,.right{
+  height: 70px;
+  width: 100px;
+  background-color:red ;
+  border-radius: 20px;
 }

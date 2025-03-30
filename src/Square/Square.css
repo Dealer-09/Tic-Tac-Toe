@@ -1,12 +1,14 @@
-:root{
-    --water-background{
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
-        color: #fff;
-      }
+:root {
+    --water-bg: rgba(255, 255, 255, 0.2); /* Background color */
+    --blur-effect: blur(10px); /* Blur effect */
+    --text-color: #fff; /* Text color */
 }
-.square{
-    width: 80px;
-    height: 80px;
-    background:var(--water-background);
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: var(--water-bg);
+    backdrop-filter: var(--blur-effect);
+    color: var(--text-color);
+    border-radius: 5px;
 }
