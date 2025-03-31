@@ -1,3 +1,6 @@
+:root {
+  --water: rgba(255, 255, 255, 0.2); 
+}
 .main-div {
   display: flex;
   flex-direction: column;
@@ -25,7 +28,7 @@
   height: 70px;
   width: 100px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background:var(--water);
   border: 2px solid rgba(255, 255, 255, 0.4);
   color: #fff;
   display: flex;
@@ -42,7 +45,7 @@
   transform: scale(1.05);
 }
 .water-background {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--water);
   backdrop-filter: blur(10px);
   color: #fff;
   padding: 10px 20px;
@@ -62,4 +65,16 @@
   font-weight: bold;
   color: #fff;
   margin-top: 20px;
+}
+.playOnline 
+{
+  font-weight: 700;
+  background-color:var(--water);
+  border: none;
+  color: #fff;
+  font-size: 60px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }

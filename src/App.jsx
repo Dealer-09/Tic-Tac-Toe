@@ -8,7 +8,8 @@ const App = () => {
   const [gameState, setGameState] = useState(renderFrom);
   const [currentPlayer, setCurrentPlayer] = useState("circle"); 
   const [finishedState, setFinishedState] = useState(false);
-  
+  const [playOnline,setPlayOnline]=useState(false);
+
   const checkWinner = () => {
     for(let row = 0; row <gameState.length; row++) {
       if(gameState[row][0] === gameState[row][1] && gameState[row][1] === gameState[row][2])
@@ -31,11 +32,18 @@ const App = () => {
       return 'Draw';
       return null;
     };
+
   useEffect(() => {
     const winner=checkWinner();
     if (winner) 
       setFinishedState(winner);
   }, [gameState]);
+  if(!playOnline)
+  {
+    return<div className="main-div">
+      <button className="playOnline">Play Online</button>
+     </div>
+  }
   return (
     <div className="main-div">
       <div className="content-container">
