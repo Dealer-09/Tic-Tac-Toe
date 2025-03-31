@@ -12,3 +12,13 @@
     color: var(--text-color);
     border-radius: 5px;
 }
+.square:hover {
+    background: rgba(0, 255, 255, 0.8);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.not-allowed{
+    cursor: not-allowed;
+}   
