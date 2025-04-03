@@ -1,6 +1,9 @@
 #
 node_modules/
-Tic-Tac-Toe/node_modules/
+Tic-Tac-Toe Frontend/node_modules/
+Tic-Tac-Toe SERVER/node_modules/
+
+
 # Logs
 logs
 *.log
