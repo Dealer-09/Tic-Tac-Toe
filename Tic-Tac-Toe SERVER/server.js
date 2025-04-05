@@ -1,6 +1,6 @@
 const express = require("express"); const { createServer } = require("http"); const { Server } = require("socket.io");
 
-const app = express(); const httpServer = createServer(app); const io = new Server(httpServer, { cors: { origin: ["http://localhost:5173", "http://localhost:5174"] }, });
+const app = express(); const httpServer = createServer(app); const io = new Server(httpServer, { cors: { origin: ["http://localhost:5173", "http://localhost:5174","https://tic-tac-toe-six-gules-14.vercel.app/"] }, });
 
 const allUsers = {}; const allRooms = [];
 
@@ -72,5 +72,4 @@ if (currentUser) {
 }
 
 }); });
-
-httpServer.listen(3000, () => { console.log("Server running on http://localhost:3000"); });
+const PORT= process.env.PORT || 3000; httpServer.listen(PORT, () => { console.log(`Server is running on port ${PORT}`); });
